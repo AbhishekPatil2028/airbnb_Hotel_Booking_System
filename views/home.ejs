@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- EJS Embeded javascript -->
+     
+    <div id="header">
+
+        <header class="header" >
+            <nav>
+
+                <div class="flex" id="flex"> 
+                    <div class="logo">
+                       <span><img src="" alt="img" id="logo"></span>  <span><img src="./images/download.jpeg" alt="" id="logo"></span>
+                    </div>
+                    <div class="flex" claas="middlediv">
+                        <div class="ll"><span><img src="./images/house.png" alt="img" id="homelogo"></span><span> Homes</span></div>
+                        <div><span><img src="./images/hot-air-balloon.png" alt="img" class="hot-air-balloon"></span><span> Experiences</span></div>
+                        <div><span><img src="./images/bell.png" alt="img" class="bell"></span><span> Services</span></div>
+                    </div>
+                    
+                    <div class="GloMen">
+                        <strong class="hide1024">Become a host</strong>
+                        <div class="globeAmenu"><img src="./images/globe.png" alt="" class="globe"></div>
+                        <div class="globeAmenu"><img src="./images/menu (1).png" alt="" class="menu"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="search" >
+            <div id="searchbar">
+                <div>
+                    <h4>Where</h4>
+                    <input type="text" placeholder="Search destinations">
+                </div>
+                <hr class="verticalline">
+                <div class="hide425">
+                    <h4>When</h4>
+                    <input type="text" placeholder="Add dates">
+                </div><hr class="verticalline">
+                <div class="hide425">
+                    <h4>Who</h4>
+                    <input type="text" placeholder="Add guests">
+                </div>
+                <div>
+                    <img src="./images/search (1).png" alt="" class="bell">
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+
+    <section>
+        <div class="firstline">
+            <div class="imgdiv"><h3> &nbsp;&nbsp;Popular homes in South Goa</h3><br></div>
+            <div class="imgflex">
+                
+                <% hotels.forEach((hotel)=>{ %>
+                    <div class="flex">
+                        <h2></h2>
+                        
+                        
+                        <div><a href="/hotels/<%= hotel._id %>"><img src="<%= hotel.images[0] %>" alt="" ></a><h5><%=hotel.title %></h5>
+                        <p>₹<%= hotel.price %> for 2 nights.4.83⭐</p></div>
+                        
+                        
+                </div>
+                <% }) %>
+             
+        </div>
+        </section>
+
+    <section>
+        <div class="firstline">
+            <div class="imgdiv"><h3> &nbsp;&nbsp;Available in North Goa this weekend</h3><br></div>
+            <div class="imgflex">
+                <div><a href=""><img src="./images/h1.avif" alt=""></a><h5>Guest house in Majorda</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+                <div><a href=""><img src="./images/h1.jpg" alt=""></a><h5>Apartment in Varca</h5><p>₹6,788 for 2 nights.4.93⭐</p></div>
+                <div><a href=""><img src="./images/h2avif.avif" alt=""></a><h5>Apartment in Varca</h5><p>₹4,848 for 2 nights.4.93⭐</p></div>
+                <div><a href=""><img src="./images/h3webp.webp" alt=""></a><h5>Flat in Dabolim</h5><p>₹4,109 for 2 nights.4.89⭐</p></div>
+                <div class="hide768"><a href=""><img src="./images/h6avif.avif" alt=""></a><h5>Apartment in Canacona</h5><p>₹5,704 for 2 nights.4.91⭐</p></div>
+                <div   class="hide1024"><a href=""><img src="./images/h5avif.avif" alt=""></a><h5>Apartment in Kolve</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+                <div   class="hide1024"><a href=""><img src="./images/h5avif.avif" alt=""></a><h5>Apartment in Kolve</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+            </div>
+             
+        </div>
+        </section>
+
+    <section>
+        <div class="firstline">
+            <div class="imgdiv"><h3> &nbsp;&nbsp;Available in North Goa this weekend</h3><br></div>
+            <div class="imgflex">
+                <div><a href=""><img src="./images/h1.avif" alt=""></a><h5>Guest house in Majorda</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+                <div><a href=""><img src="./images/h1.jpg" alt=""></a><h5>Apartment in Varca</h5><p>₹6,788 for 2 nights.4.93⭐</p></div>
+                <div><a href=""><img src="./images/h2avif.avif" alt=""></a><h5>Apartment in Varca</h5><p>₹4,848 for 2 nights.4.93⭐</p></div>
+                <div><a href=""><img src="./images/h3webp.webp" alt=""></a><h5>Flat in Dabolim</h5><p>₹4,109 for 2 nights.4.89⭐</p></div>
+                <div class="hide768"><a href=""><img src="./images/h6avif.avif" alt=""></a><h5>Apartment in Canacona</h5><p>₹5,704 for 2 nights.4.91⭐</p></div>
+                <div  class="hide1024"><a href=""><img src="./images/h5avif.avif" alt=""></a><h5>Apartment in Kolve</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+                <div  class="hide1024"><a href=""><img src="./images/h7avif.avif" alt=""></a><h5>Guest house in Majorda</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+            </div>
+             
+        </div>
+        </section>
+
+    <section>
+        <div class="firstline">
+            <div class="imgdiv"><h3> &nbsp;&nbsp;Available in North Goa this weekend</h3><br></div>
+            <div class="imgflex">
+                <div><a href=""><img src="./images/h1.avif" alt=""></a><h5>Guest house in Majorda</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+                <div><a href=""><img src="./images/h1.jpg" alt=""></a><h5>Apartment in Varca</h5><p>₹6,788 for 2 nights.4.93⭐</p></div>
+                <div><a href=""><img src="./images/h2avif.avif" alt=""></a><h5>Apartment in Varca</h5><p>₹4,848 for 2 nights.4.93⭐</p></div>
+                <div><a href=""><img src="./images/h3webp.webp" alt=""></a><h5>Flat in Dabolim</h5><p>₹4,109 for 2 nights.4.89⭐</p></div>
+                <div class="hide768"><a href=""><img src="./images/h6avif.avif" alt=""></a><h5>Apartment in Canacona</h5><p>₹5,704 for 2 nights.4.91⭐</p></div>
+                <div  class="hide1024"><a href=""><img src="./images/h5avif.avif" alt=""></a><h5>Apartment in Kolve</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+                <div  class="hide1024"><a href=""><img src="./images/h7avif.avif" alt=""></a><h5>Guest house in Majorda</h5><p>₹6,848 for 2 nights.4.83⭐</p></div>
+            </div>
+             
+        </div>
+        </section>
+        <footer>
+
+            <div >
+                <h4>Inspiration for future getaways</h4><br>
+                <hr id="horizantalline">
+                
+                <div class="footerdata" >
+                    <div class="para">
+                        <strong>Support</strong>
+                        <p>Help Center</p>
+                        <p>Get help with a safety issue</p>
+                        <p> AirCover</p>
+                        <p> Anti-discrimination</p>
+                        <p>Disability support</p>
+                        <p>Cancellation options</p>
+                        <p>Report neighbourhood concern</p>
+                    </div>
+                    <div class="para" >
+                        <strong>Hosting</strong>
+                        <p>Airbnb your home</p>
+                        <p>Airbnb your experience</p>
+                        <p>Airbnb your service</p>
+                        <p>AirCover for Hosts</p>
+                        <p>Hosting resources</p>
+                        <p>Community forum</p>
+                        <p>Hosting responsibly</p>
+                        <p>Join a free Hosting class</p>
+                        <p>Find a cohost</p>
+                    </div>
+                    <div class="para">
+                        <strong>Airbnb</strong>
+                        <P>2025 Summer Release</P>
+                        <P>Newsroom</P>
+                        <P>Careers</P>
+                        <P>Investors</P>
+                        <P>Airbnb.org emergency stays</P>
+                    </div>
+                </div>
+                <hr id="lasthorizantalline">
+                <div><span class="fontsmall">@ 2025 Airbnb,Inc. <span> *Privacy &nbsp; *Term &nbsp; *Sitemap &nbsp;*Company </span> </span><span class="rdc"> <img src="./images/globe.png" alt="" class="bott-rigcor"> English(IN) &nbsp;&nbsp;₹ &nbsp;INR &nbsp; <img src="./images/facebook.png" alt="" class="bott-rigcor"> &nbsp;<img src="./images/instagram.png" alt="" class="bott-rigcor" > &nbsp;&nbsp;<img src="./images/twitter.png" alt="" class="bott-rigcor"></span></div>
+            </div>
+            <div>
+                
+            </div>
+        </footer>
+
+        
+  
+</body>
+</html>
+  

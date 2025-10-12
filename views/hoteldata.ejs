@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    
+    <h1>Masai - By Kudrats Nilaya (valley view) with pool</h1>
+    <div class="flex " >
+  <div> <img src="<%= hotel.images[0] %>" alt="" id="mainimg"></div> 
+  <div class="flex1">
+  <img src="<%= hotel.images[1] %>" alt="">
+  <img src="<%= hotel.images[2] %>" alt="">
+  <img src="<%= hotel.images[3] %>" alt="">
+  <img src="<%= hotel.images[4] %>" alt="">
+  </div>
+</div>
+<div class="Center">
+<h1 class="ul"><%= hotel.title %></h1>
+  <!-- <h1><%= hotel.price %></h1> -->
+
+      <ul class="ul">
+          <li> guests:<%= hotel.guests %></li>
+          <li> bedroom:<%= hotel.bedroom %></li>
+          <li> beds:<%= hotel.beds %></li>
+          <li> bathroom:<%= hotel.bathroom %></li>
+        </ul>
+        </div>
+
+        <div class="box ul">
+           <span>Guest favourite</span> <hr> <span>One of the most loved homes on <br> Airbnb, according to guests</span> <hr> <span><%= hotel.rating %></span> <span> 18 </span>
+        </div>
+
+        <h6>Hosted by <%= hotel.host %></h6>
+  <a href="/hotels/<%= hotel._id %>">View this hotel</a>
+</body>
+</html>
